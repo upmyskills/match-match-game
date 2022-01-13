@@ -1,0 +1,54 @@
+{
+    "difficulty": [
+        {
+            "option": "easy",
+            "value": 3
+        },
+        {
+            "option": "normal",
+            "value": 6
+        },
+        {
+            "option": "hard",
+            "value": 9
+        }
+    ],
+
+    "category": [
+        {
+            "option": "animals",
+            "value": [
+                "animal_01.png",
+                "animal_02.png",
+                "animal_03.png",
+                "animal_04.png",
+                "animal_05.png",
+                "animal_06.png",
+                "animal_07.png",
+                "animal_08.png",
+                "animal_09.png",
+                "animal_10.png",
+                "animal_11.png",
+                "animal_12.png",
+                "animal_13.png"
+            ]
+        },
+        {
+            "option": "poterocemon",
+            "value": [
+                "pottermon__01.png",
+                "pottermon__02.png",
+                "pottermon__03.png",
+                "pottermon__04.png",
+                "pottermon__05.png",
+                "pottermon__06.png",
+                "pottermon__07.png",
+                "pottermon__08.png",
+                "pottermon__09.png",
+                "pottermon__10.png",
+                "pottermon__11.png",
+                "pottermon__12.png"
+            ]
+        }
+    ]
+}

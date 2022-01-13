@@ -1,0 +1,145 @@
+.modal-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    min-width: 840px;
+    height: 100vh;
+    background-color: rgba(0,0,0, 0.5);
+    z-index: 1000;
+}
+
+.modal-registration {
+    display: block;
+    position: absolute;
+    width: 640px;
+    min-height: 460px;
+    top: 10vh;
+    left: calc(50% - 320px);
+    padding: 20px;
+    background-color: #fff;
+}
+
+.modal-title {
+    display: flex;
+    align-items: center;
+    height: 67px;
+}
+
+.modal-form {
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+}
+
+.form-control__input {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+
+    /* identical to box height, or 150% */
+    letter-spacing: 0.15px;
+
+    width: 328px;
+    height: 56px;
+    outline: none;
+    padding: 10px 10px 20px 50px;
+    border: none;
+    margin-bottom: 15px;
+    background-color: rgba(151,151,151, .3);
+}
+
+.form-buttons {
+    width: 100%;
+    display: flex;
+    height: 100px;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.success-status,
+.error-status {
+    & .input-status {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+}
+
+.success-status {
+   border: 2px solid green;
+}
+
+.error-status {
+    border: 2px solid rgb(139, 51, 0);
+}
+
+.modal-avatar {
+    background-image: url('../../../public/imgs/avatar.png');
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    cursor: pointer;
+    overflow: hidden;
+
+    & .avatara {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.btn-submit,
+.btn-cancel {
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.12);
+    outline: none;
+    border: none;
+    transition: all .2s ease-in-out;
+
+    padding: 10px 16px;
+
+    &:active {
+        transform: scale(0.98);
+    }
+}
+
+.btn-submit {
+    margin-right: 17px;
+    background-color: #2196F3;
+    color: #fff;
+
+    &:hover {
+        background-color: #2275b9;
+    }
+
+    &:disabled {
+        cursor: not-allowed;
+        background-color: #76b7ec;
+        opacity: .4;
+    }
+}
+
+.btn-cancel {
+    background-color: #E3F2FD;
+    color: #2196F3;
+
+    &:hover {
+        background-color: #91b2c9;
+    }
+}

@@ -1,0 +1,19 @@
+.header-button {
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    width: 207px;
+    height: 36px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 11px 16px;
+    background-color: #F2F9FE;
+    color: #2196F3;
+    border: none;
+    filter: drop-shadow(1px 1px 4px rgba(15, 33, 54, 0.5));
+    transition: all .2s ease-in-out;
+
+    &:active {
+       transform: scale(.99); 
+    }
+}

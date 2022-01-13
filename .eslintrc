@@ -1,0 +1,39 @@
+{
+    "env": {
+      "browser": true,
+      "es2021": true
+    },
+    "extends": [
+      "airbnb-typescript/base",
+      "eslint:recommended",
+      "plugin:@typescript-eslint/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "project": "./tsconfig.json"
+    },
+    "ignorePatterns": ["webpack.config.js"],
+    "plugins": [
+      "@typescript-eslint"
+    ],
+    "rules": {
+      // "import/no-cycle": [2, { "maxDepth": 2 }],
+      "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
+      "lines-between-class-members": ["error", "always", { "exceptAfterSingleLine": true }],
+      "linebreak-style": 0,
+      // "linebreak-style": ["error", "windows"],
+      "no-plusplus": "off",
+      "no-console": "warn",
+      "max-len": ["warn", { "code": 120 }],
+      "indent": ["warn", 2, {
+        "SwitchCase": 1
+      }],
+      "@typescript-eslint/indent": ["warn", 2, {
+        "SwitchCase": 1
+      }],
+      "import/prefer-default-export": "off",
+      "no-param-reassign": ["error", {
+        "props": false
+      }]
+    }
+  }
